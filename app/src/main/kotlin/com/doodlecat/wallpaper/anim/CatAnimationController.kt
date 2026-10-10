@@ -439,8 +439,8 @@ class CatAnimationController(
         val maxX = surfaceW - marginPx - halfW
         val minY = marginPx + halfH
         val maxY = surfaceH - marginPx - halfH
-        p.x = if (maxX <= minX) surfaceW * 0.5f else p.coerce(p.x, minX, maxX)
-        p.y = if (maxY <= minY) surfaceH * 0.5f else p.coerce(p.y, minY, maxY)
+        p.x = if (maxX <= minX) surfaceW * 0.5f else coerce(p.x, minX, maxX)
+        p.y = if (maxY <= minY) surfaceH * 0.5f else coerce(p.y, minY, maxY)
     }
 
     private fun coerce(v: Float, min: Float, max: Float) = v.coerceIn(min, max)

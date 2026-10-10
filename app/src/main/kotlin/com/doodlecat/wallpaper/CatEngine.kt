@@ -8,6 +8,7 @@ import android.content.SharedPreferences
 import android.os.Handler
 import android.os.Looper
 import android.os.SystemClock
+import android.service.wallpaper.WallpaperService
 import android.view.Choreographer
 import android.view.MotionEvent
 import androidx.core.content.ContextCompat

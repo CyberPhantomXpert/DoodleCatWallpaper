@@ -32,11 +32,11 @@ class MainActivity : Activity() {
         }
         runCatching { startActivity(primary); return }
         runCatching {
-            startActivity(Intent(WallpaperManager.ACTION_LIVE_WALLPAPER_SETTINGS).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+            startActivity(Intent(WallpaperManager.ACTION_LIVE_WALLPAPER_CHOOSER).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
             return
         }
         runCatching {
-            startActivity(Intent(Settings.ACTION_WALLPAPER_SETTINGS).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+            startActivity(Intent(Intent.ACTION_SET_WALLPAPER).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
         }
     }
 }
