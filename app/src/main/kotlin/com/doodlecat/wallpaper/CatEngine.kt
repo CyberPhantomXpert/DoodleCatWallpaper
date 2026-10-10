@@ -24,7 +24,7 @@ import com.doodlecat.wallpaper.render.CatRenderer
  *  - screen-off / visibility-loss removes every callback and receiver-driven work;
  *  - no threads, no wake locks, no allocations in the draw path.
  */
-class CatEngine(service: CatWallpaperService) : WallpaperService.Engine() {
+class CatEngine(private val service: CatWallpaperService) : WallpaperService.Engine() {
 
     private val prefs = Prefs.get(service)
     private val controller = CatAnimationController(prefs)
