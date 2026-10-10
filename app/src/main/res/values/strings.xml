@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Doodle Cat</string>
+    <string name="wallpaper_description">A tiny hand-drawn cat that sleeps on your wallpaper. Tap to wake it for a moment.</string>
+    <string name="main_title">Meet your wallpaper cat.</string>
+    <string name="main_subtitle">It sleeps. You tap. It moves. It sleeps again.</string>
+    <string name="btn_set_wallpaper">Set as Live Wallpaper</string>
+    <string name="btn_settings">Cat preferences</string>
+    <string name="settings_title">Cat preferences</string>
+    <string name="pref_size">Cat size</string>
+    <string name="pref_speed">Movement speed</string>
+    <string name="pref_rare">Rare events</string>
+    <string name="pref_z">Sleeping Z</string>
+    <string name="pref_pose">Random sleeping pose</string>
+    <string name="pref_bg">Charcoal background</string>
+</resources>

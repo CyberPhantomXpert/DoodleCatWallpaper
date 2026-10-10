@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_title"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Cat size -->
+        <TextView style="@style/RowTitle" android:text="@string/pref_size" />
+        <LinearLayout style="@style/OptionRow" android:id="@+id/row_size">
+            <TextView style="@style/Chip" android:tag="opt" />
+            <TextView style="@style/Chip" android:tag="opt" />
+            <TextView style="@style/Chip" android:tag="opt" />
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <!-- Speed -->
+        <TextView style="@style/RowTitle" android:text="@string/pref_speed" />
+        <LinearLayout style="@style/OptionRow" android:id="@+id/row_speed">
+            <TextView style="@style/Chip" android:tag="opt" />
+            <TextView style="@style/Chip" android:tag="opt" />
+            <TextView style="@style/Chip" android:tag="opt" />
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <TextView style="@style/RowTitle" android:text="@string/pref_rare" />
+        <Switch
+            android:id="@+id/sw_rare"
+            style="@style/RowSwitch"
+            android:textOff=""
+            android:textOn="" />
+
+        <View style="@style/Divider" />
+
+        <TextView style="@style/RowTitle" android:text="@string/pref_z" />
+        <Switch android:id="@+id/sw_z" style="@style/RowSwitch" />
+
+        <View style="@style/Divider" />
+
+        <TextView style="@style/RowTitle" android:text="@string/pref_pose" />
+        <Switch android:id="@+id/sw_pose" style="@style/RowSwitch" />
+
+        <View style="@style/Divider" />
+
+        <TextView style="@style/RowTitle" android:text="@string/pref_bg" />
+        <Switch android:id="@+id/sw_bg" style="@style/RowSwitch" />
+    </LinearLayout>
+</ScrollView>
